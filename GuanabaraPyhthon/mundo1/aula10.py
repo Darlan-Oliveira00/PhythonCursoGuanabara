@@ -91,73 +91,73 @@
 
 
 
-print('{:=^40}'.format(" LOJAS GUANABARA "))
-preco = float(input('Preço das Compras: R$'))
-print('''FORMAS DE PAGAMENTO
-[ 1 ] à vista dinheiro/cheque 
-[ 2 ] à vista no cartão
-[ 3 ] 2x no cartão
-[ 4 ] 3x ou mais no cartão''')
-opcao = int(input('Qaul é a opção? ')) 
-if opcao == 1:
-    total = preco - (preco * 10 / 100)
-elif opcao == 2:
-    total = preco - (preco * 5 / 100)
-elif opcao == 3:
-    total = preco 
-    parcela = total / 2
-    print('Sua compra será parcelado em 2x de R${:.2f} SEM JUROS'.format(parcela))
-elif opcao == 4:
-    total = preco + (preco * 20 / 100)
-    totalparc = int(input('Quantas parcelas? '))
-    parcela = total / totalparc
-    print('Sua compra será parcelado em {:.2f}x de R${:.2f} COM JUROS'.format(totalparc, parcela))
-else:
-    total = preco
-    print('OPÇÃO INVÁLIDA de pagamento. Tente Novamente!')
-print('Sua compra de {:.2f} vai custar R${:.2f} no final'.format(preco, total))
+# print('{:=^40}'.format(" LOJAS GUANABARA "))
+# preco = float(input('Preço das Compras: R$'))
+# print('''FORMAS DE PAGAMENTO
+# [ 1 ] à vista dinheiro/cheque 
+# [ 2 ] à vista no cartão
+# [ 3 ] 2x no cartão
+# [ 4 ] 3x ou mais no cartão''')
+# opcao = int(input('Qaul é a opção? ')) 
+# if opcao == 1:
+#     total = preco - (preco * 10 / 100)
+# elif opcao == 2:
+#     total = preco - (preco * 5 / 100)
+# elif opcao == 3:
+#     total = preco 
+#     parcela = total / 2
+#     print('Sua compra será parcelado em 2x de R${:.2f} SEM JUROS'.format(parcela))
+# elif opcao == 4:
+#     total = preco + (preco * 20 / 100)
+#     totalparc = int(input('Quantas parcelas? '))
+#     parcela = total / totalparc
+#     print('Sua compra será parcelado em {:.2f}x de R${:.2f} COM JUROS'.format(totalparc, parcela))
+# else:
+#     total = preco
+#     print('OPÇÃO INVÁLIDA de pagamento. Tente Novamente!')
+# print('Sua compra de {:.2f} vai custar R${:.2f} no final'.format(preco, total))
 
 
-from random import randint
-itens = ('Pedra', 'Papel', 'Tesoura')
-computador = randint(0, 2)
-print('''Suas opções: 
-[ 0 ] PEDRA
-[ 1 ] PAPEL
-[ 2 ] TESOURA''')
-jogador = int(input('Qual é a sua jogada? '))
-print('JO')
-print('KEM')
-print('PÔ!!!')
-print('')
-print('-=' * 11)
-print('Computador jogou {}'.format(itens[computador]))
-print('Jogador jogou {}'.format(itens[jogador]))
-print('-=' * 11)
-if computador == 0:
-    if jogador == 0:
-        print("EMPATE")
-    elif jogador == 1:
-        print("JOGADOR VENCE")
-    elif jogador == 2:
-        print('COMPUTADOR VENCE')
-    else: 
-        print('JOGADA INVÁLIDA')
-elif computador == 1:
-    if jogador == 0:
-        print('COMPUTADOR VENCE')
-    elif jogador == 1:
-        print('EMPATE')
-    elif jogador == 2:
-        print('JOGADOR VENCE')
-    else: 
-        print('JOGADA INVÁLIDA')
-elif computador == 2:
-    if jogador == 0:
-        print('JOGADOR VENCE')
-    elif jogador == 1:
-        print('COMPUTADOR VENCE')
-    elif jogador == 2:
-        print('EMPATE')
-    else: 
-        print('JOGADA INVÁLIDA')
+# from random import randint
+# itens = ('Pedra', 'Papel', 'Tesoura')
+# computador = randint(0, 2)
+# print('''Suas opções: 
+# [ 0 ] PEDRA
+# [ 1 ] PAPEL
+# [ 2 ] TESOURA''')
+# jogador = int(input('Qual é a sua jogada? '))
+# print('JO')
+# print('KEM')
+# print('PÔ!!!')
+# print('')
+# print('-=' * 11)
+# print('Computador jogou {}'.format(itens[computador]))
+# print('Jogador jogou {}'.format(itens[jogador]))
+# print('-=' * 11)
+# if computador == 0:
+#     if jogador == 0:
+#         print("EMPATE")
+#     elif jogador == 1:
+#         print("JOGADOR VENCE")
+#     elif jogador == 2:
+#         print('COMPUTADOR VENCE')
+#     else: 
+#         print('JOGADA INVÁLIDA')
+# elif computador == 1:
+#     if jogador == 0:
+#         print('COMPUTADOR VENCE')
+#     elif jogador == 1:
+#         print('EMPATE')
+#     elif jogador == 2:
+#         print('JOGADOR VENCE')
+#     else: 
+#         print('JOGADA INVÁLIDA')
+# elif computador == 2:
+#     if jogador == 0:
+#         print('JOGADOR VENCE')
+#     elif jogador == 1:
+#         print('COMPUTADOR VENCE')
+#     elif jogador == 2:
+#         print('EMPATE')
+#     else: 
+#         print('JOGADA INVÁLIDA')
