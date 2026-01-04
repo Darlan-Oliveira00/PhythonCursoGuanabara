@@ -114,19 +114,48 @@
 # print('Progressão finalizada com {} termos mostrados'.format(total))
 
 
-print('-'*30)
-print('Sequencia de Fibonacci')
-print('-'*30)
-n = int(input('Quantos termos você quer mostrar? '))
-t1 = 0 
-t2 = 1
-print('˜' * 30)
-print('{} -> {}'.format(t1, t2), end='')
-cont = 3
-while cont <= n:
-    t3 = t1 + t2
-    print(' -> {}'.format(t3), end='')
-    t1 = t2
-    t2 = t3
-    cont += 1
-print(' -> FIM')
+# print('-'*30)
+# print('Sequencia de Fibonacci')
+# print('-'*30)
+# n = int(input('Quantos termos você quer mostrar? '))
+# t1 = 0 
+# t2 = 1
+# print('˜' * 30)
+# print('{} -> {}'.format(t1, t2), end='')
+# cont = 3
+# while cont <= n:
+#     t3 = t1 + t2
+#     print(' -> {}'.format(t3), end='')
+#     t1 = t2
+#     t2 = t3
+#     cont += 1
+# print(' -> FIM')
+
+
+
+# num = soma = cont = 0 
+# num = int(input('Digite um número: [999 para parar] ')) 
+# while num != 999:
+#     soma += num
+#     cont += 1
+#     num = int(input('Digite um número: [999 para parar] '))
+# print('Você digitou {} números e a soma entre eles foi {}.'.format(cont, soma))
+
+
+resp = 'S'
+soma = media = quant = maior = menor = 0 
+while resp in 'Ss':
+    num = int(input('Digite um número: '))
+    soma += num
+    quant += 1
+    if quant == 1:
+        maior = menor = num
+    else: 
+        if num > maior:
+            maior = num 
+        if num < menor:
+            menor = num
+    resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    media = soma / quant
+print('Você digitou {} números e a média foi {} '.format(quant, media))
+print('O maior valor foi {} e o menor foi {}'.format(maior, menor))
