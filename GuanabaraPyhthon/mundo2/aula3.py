@@ -61,49 +61,72 @@
 
 
 
-from math import factorial
-n = int(input('Digite um número para calcular seu factorial: '))
-f = factorial(n)
-print('O factorial de {} é {}'.format(n, f))
+# from math import factorial
+# n = int(input('Digite um número para calcular seu factorial: '))
+# f = factorial(n)
+# print('O factorial de {} é {}'.format(n, f))
 
 
 
-n = int(input('Digite um número para calcular seu factorial: '))
-c = n
-f = 1 
-print('Calculando {}! = '.format(n), end='')
-while c > 0: 
-    print('{} '.format(c), end='' )
-    print(' x ' if c > 1 else ' = ', end = '')
-    f *= c 
-    c -= 1
-print('{}'.format(f))
+# n = int(input('Digite um número para calcular seu factorial: '))
+# c = n
+# f = 1 
+# print('Calculando {}! = '.format(n), end='')
+# while c > 0: 
+#     print('{} '.format(c), end='' )
+#     print(' x ' if c > 1 else ' = ', end = '')
+#     f *= c 
+#     c -= 1
+# print('{}'.format(f))
 
 
 
-print('GERADOR DE PA')
-print('-='*10)
-primeiro = int(input('Primeiro termo: '))
-razao = int(input('Razão da PA: '))
-termo = primeiro
-cont = 1 
-while cont <= 10:
-    print('{} -> '.format(termo), end='')
-    termo += razao
+# print('GERADOR DE PA')
+# print('-='*10)
+# primeiro = int(input('Primeiro termo: '))
+# razao = int(input('Razão da PA: '))
+# termo = primeiro
+# cont = 1 
+# while cont <= 10:
+#     print('{} -> '.format(termo), end='')
+#     termo += razao
+#     cont += 1
+# print('FIM')
+
+
+
+# print('GERADOR DE PA')
+# print('-='*10)
+# primeiro = int(input('Primeiro termo: '))
+# razao = int(input('Razão da PA: '))
+# termo = primeiro
+# cont = 1 
+# total = 0 
+# mais = 10
+# while mais != 0:
+#     total += mais
+#     while cont <= total:
+#         print('{} -> '.format(termo), end='')
+#         termo += razao
+#         cont += 1
+#     print('PAUSA')
+#     mais = int(input('Quantos termos você quer mostrar a mais? '))
+# print('Progressão finalizada com {} termos mostrados'.format(total))
+
+
+print('-'*30)
+print('Sequencia de Fibonacci')
+print('-'*30)
+n = int(input('Quantos termos você quer mostrar? '))
+t1 = 0 
+t2 = 1
+print('˜' * 30)
+print('{} -> {}'.format(t1, t2), end='')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    print(' -> {}'.format(t3), end='')
+    t1 = t2
+    t2 = t3
     cont += 1
-print('FIM')
-
-
-
-print('GERADOR DE PA')
-print('-='*10)
-primeiro = int(input('Primeiro termo: '))
-razao = int(input('Razão da PA: '))
-termo = primeiro
-cont = 1 
-while cont <= 10:
-    print('{} -> '.format(termo), end='')
-    termo += razao
-    cont += 1
-print('PAUSA')
-mais = int(input('Quantos termos você quer mostrar? '))
+print(' -> FIM')
