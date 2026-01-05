@@ -85,10 +85,54 @@
 
 
 
-while True:
-    produto = str(input('Nome do Produto: '))
-    preco = float(input('Preço: R$'))
+# total = tot1000 = menor = cont = 0
+# barato = ' '
+# while True:
+#     produto = str(input('Nome do Produto: '))
+#     preco = float(input('Preço: R$'))
+#     total += preco
+#     cont += 1
+#     if preco > 1000:
+#         tot1000 += 1
+#     if cont == 1:
+#         menor = preco
+#         barato = produto
+#     else:
+#         if preco < menor:
+#             menor = preco 
+#             barato = produto
+#     resp = ' '
+#     while resp not in 'SN':
+#         resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
+#     if resp == 'N':
+#         break
+# print('{:-^40}'.format('FIM DO PROGRAMA'))
+# print(f'O total da compra foi de R${total:.2f}')
+# print(f'Temos {tot1000} produtos custando mais de R$1000,00 ')
+# print(f'O produto mais barato foi {barato} que custa R${menor:.2f}')
 
-    resp = ' '
-    while not in 'SN':
-        resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
+
+
+print('-='*30)
+print('{:^30}'.format('BANCO CEV'))
+print('-='*30)
+valor = int(input('Que valor você quer sacar? R$'))
+total = valor 
+ced = 50
+totced = 0
+while True:
+    if total >= ced:
+        total -= ced
+        totced += 1
+    else: 
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced ==10: 
+            ced = 1
+        totced = 0
+        if total == 0: 
+            break
