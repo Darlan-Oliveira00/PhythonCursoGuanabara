@@ -27,13 +27,42 @@ lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
 
 
 
-cont = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco',
-        'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
-        'Onze', 'Doze', 'Treze', 'Quartoze', 'Quinze',
-        'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
-while True:
-    num = int(input('Digite um número entre 0 e 20: '))
-    if 0 <= num <= 20:
-        break
-    print('Tente Novamente. ', end='')
-print(f'Você digitou o número {cont[num]}')
+# cont = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco',
+#         'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
+#         'Onze', 'Doze', 'Treze', 'Quartoze', 'Quinze',
+#         'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
+# while True:
+#     num = int(input('Digite um número entre 0 e 20: '))
+#     if 0 <= num <= 20:
+#         break
+#     print('Tente Novamente. ', end='')
+# print(f'Você digitou o número {cont[num]}')
+
+
+
+# from random import randint
+# numeros = (randint(1,10), randint(1,10), randint(1,10), 
+#      randint(1,10), randint(1,10),)
+# print('Os Valores sorteados foram: ', end='')
+# for n in numeros:
+#     print(f'{n} ')
+# print(f'O maior valor sorteado foi {max(numeros)}')
+# print(f'O menor valor sorteado foi {min(numeros)}')
+
+
+# num = (int(input('Digite um número: ')),
+#        int(input('Digite outro número: ')),
+#        int(input('Digite mais um número: ')),
+#        int(input('Digite o último número: ')))
+# print(f'Você digitou os valores {num}')
+# print(f'O valor 9 apareceu {num.count(9)} vezes')
+# if 3 in num:
+#     print(f'O valor 3 apareceu na {num.index(3)+1} posição')
+# else:
+#     print('O valor 3 não foi digitado em nenhuma posição')
+# print('Os valores pares digitados foram ', end='')
+# for n in num:
+#     if n % 2 == 0:
+#         print(n, end=' ')
+
+
