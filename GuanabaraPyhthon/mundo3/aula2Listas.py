@@ -30,26 +30,61 @@
 
 
 
-listanum = []
-maior = 0
-menor = 0 
-for c in range (0, 5):
-    listanum.append(int(input(f'Digite um valor na posicão {c}: ')))
-    if c == 0:
-        maior = menor = listanum[c]
-    else:
-        if listanum[c] > maior:
-            maior = listanum[c]
-        if listanum[c] < menor:
-            menor = listanum[c]
-print('-='*30)
-print(f'Você digitou os valores {listanum}')
-print(f'O maior valor digitado foi: {maior} nas posições', end='')
-for i, v in enumerate(listanum):
-    if v == maior:
-        print(f'{i}... ', end='')
-print()
-print(f'O menor valor digitado foi: {menor} nas posições', end='')
-for i, v in enumerate(listanum):
-    if v == menor:
-        print(f'{i}...', end='')
+# listanum = []
+# maior = 0
+# menor = 0 
+# for c in range (0, 5):
+#     listanum.append(int(input(f'Digite um valor na posicão {c}: ')))
+#     if c == 0:
+#         maior = menor = listanum[c]
+#     else:
+#         if listanum[c] > maior:
+#             maior = listanum[c]
+#         if listanum[c] < menor:
+#             menor = listanum[c]
+# print('-='*30)
+# print(f'Você digitou os valores {listanum}')
+# print(f'O maior valor digitado foi: {maior} nas posições', end='')
+# for i, v in enumerate(listanum):
+#     if v == maior:
+#         print(f'{i}... ', end='')
+# print()
+# print(f'O menor valor digitado foi: {menor} nas posições', end='')
+# for i, v in enumerate(listanum):
+#     if v == menor:
+#         print(f'{i}...', end='')
+
+
+
+# numeros = list()
+# while True:
+#     n = int(input('Digite um valor: '))
+#     if n not in numeros:
+#         numeros.append(n)
+#         print('Valor adicionado com sucesso...')
+#     else: 
+#         print('Valor duplicado! Nåo vou adicionar...')
+#     res = str(input('Quer continuar? [S/N] '))
+#     if res in 'Nn':
+#         break
+# print('-='*30)
+# print(f'Você digitou os valores {numeros}')
+
+
+
+# lista = []
+# for c in range (0, 5):
+#     n = int(input('Digite um valor: '))
+#     if c == 0 or n > lista[-1]:
+#         lista.append(n)
+#     else:
+#         pos = 0 
+#         while pos < len(lista):
+#             if n <= lista[pos]:
+#                 lista.insert(pos, n)
+#                 break
+#             pos += 1
+# print('-='*30)
+# print(f'Os valores digitados em ordem foram {lista}')
+
+
