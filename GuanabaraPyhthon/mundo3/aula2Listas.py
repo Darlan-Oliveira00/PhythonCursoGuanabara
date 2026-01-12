@@ -90,17 +90,41 @@
 
 
 
-valores = []
-while True:
-    valores.append(int(input('Digite um valor: ')))
-    res = str(input('Quer continaur? [S/N] '))
-    if res in 'Nn':
-        break
-print('-='*30)
-print(f'Você digitou {len(valores)} elementos')
-valores.sort(reverse=True)
-print(f'Os valores em ordem decrescente são {valores}')
-if 5 in valores:
-    print('O valor 5 faz parte da lista.')
-else:
-    print('O valor 5 não foi encontrado na lista')
+# valores = []
+# while True:
+#     valores.append(int(input('Digite um valor: ')))
+#     res = str(input('Quer continaur? [S/N] '))
+#     if res in 'Nn':
+#         break
+# print('-='*30)
+# print(f'Você digitou {len(valores)} elementos')
+# valores.sort(reverse=True)
+# print(f'Os valores em ordem decrescente são {valores}')
+# if 5 in valores:
+#     print('O valor 5 faz parte da lista.')
+# else:
+#     print('O valor 5 não foi encontrado na lista')
+
+
+
+
+# num = list()
+# pares = list()
+# impares = list()
+# while True:
+#     num.append(int(input('Digite um número: ')))
+#     resposta = str(input("Quer continar? [S/N] "))
+#     if resposta in 'Nn':
+#         break
+# for i, v in enumerate(num):
+#     if v % 2 == 0:
+#         pares.append(v)
+#     else:
+#         impares.append(v)
+# print(f'A lista completa é {num}')
+# print(f'Os ímpares são {impares}')
+# print(f'Os pares são {pares}')
+
+
+expr = str(input('Digite a expressão: '))
+pilha = list()
