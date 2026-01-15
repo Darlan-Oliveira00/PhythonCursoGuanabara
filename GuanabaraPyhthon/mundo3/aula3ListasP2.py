@@ -132,3 +132,4 @@ while True:
         break
 lista.sort()
 print(f'Os números sorteados foram {lista}')
+print()
