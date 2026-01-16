@@ -122,14 +122,22 @@
 
 from random import randint
 lista = list()
-cont = 0 
-while True:
-    num = randint(1, 60)
-    if num not in lista:
-        lista.append(num)
-        cont += 1
-    if cont >= 6:
-        break
-lista.sort()
+jogos = list()
+print('-='*20)
+print('       JOGA NA MEGA SENA        ')
+print('-='*20)
+quant = int (input('Quantos jogos você quer que eu sorteie? '))
+tot = 0
+while tot <= quant:
+    cont = 0
+    while True:
+        num = randint(1, 60)
+        if num not in lista:
+            lista.append(num)
+            cont += 1
+        if cont >= 6:
+            break
+    lista.sort()
+    jogos.append(list[:])
+    lista.clear
 print(f'Os números sorteados foram {lista}')
-print()
