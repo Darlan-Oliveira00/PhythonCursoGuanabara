@@ -36,15 +36,15 @@
 #     sleep(1)
 
 
-from datetime import datetime
-dados = dict()
-dados['nome'] = str(input('Nome: '))
-nasc = int(input('Ano de Nascimento: '))
-dados['idade'] = datetime.now().year -  nasc
-dados['ctps'] = int(input('Carteira de Trabalho: (0 não tem): '))
-if dados['ctps']!= 0:
-    dados['contração'] = int(input('Ano de Contratação: '))
-    dados['Salario'] = float(input('Salário: R$'))
-    dados['aposentadoria'] = dados['idade'] + ((dados['contratação'] + 35) - datetime.now().year)
-print('-='*30)
-print(dados)
+# from datetime import datetime
+# dados = dict()
+# dados['nome'] = str(input('Nome: '))
+# nasc = int(input('Ano de Nascimento: '))
+# dados['idade'] = datetime.now().year -  nasc
+# dados['ctps'] = int(input('Carteira de Trabalho: (0 não tem): '))
+# if dados['ctps']!= 0:
+#     dados['contração'] = int(input('Ano de Contratação: '))
+#     dados['Salario'] = float(input('Salário: R$'))
+#     dados['aposentadoria'] = dados['idade'] + ((dados['contratação'] + 35) - datetime.now().year)
+# print('-='*30)
+# print(dados)
