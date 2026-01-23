@@ -118,8 +118,6 @@ for c in range (0,3):
         mai = matriz[1][c]
 print(f'O maior valor da segunda linha é {mai}.')
 
-
-
 from random import randint
 lista = list()
 jogos = list()
